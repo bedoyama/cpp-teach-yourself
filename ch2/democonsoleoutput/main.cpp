@@ -3,10 +3,20 @@ using namespace std;
 
 int DemoConsoleOutput();
 
+int DemoConsoleOutputDeclaredBefore()
+{
+    cout << "Writing number fifty five: " << 55 << endl;
+    cout << "Performing division 11 / 5: " << 11 / 5 << endl;
+    cout << "Pi when approximated is 22 / 7: " << 22 / 7 << endl;
+    cout << "Pi when approximated as float is 22.0 / 7: " << 22.0 / 7 << endl;
+
+    return 42;
+}
+
 int main() {
     DemoConsoleOutput();
 
-    return 0;
+    return DemoConsoleOutputDeclaredBefore();
 }
 
 int DemoConsoleOutput()
