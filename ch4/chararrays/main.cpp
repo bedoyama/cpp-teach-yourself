@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 int main() {
@@ -11,6 +12,7 @@ int main() {
     sayHello[5] = '\0';
     cout << sayHello << endl;
     cout << "Size of array sayHello is: " << sizeof(sayHello) << endl;
+    cout << "Size of string sayHello is: " << strlen(sayHello) << endl;
 
     return 0;
 }
